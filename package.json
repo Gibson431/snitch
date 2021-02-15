@@ -10,6 +10,15 @@
   "license": "ISC",
   "dependencies": {
     "discord.js": "^12.5.1",
+    "module-alias": "^2.2.2",
     "wokcommands": "^1.2.1"
-  }
+  },
+  "_moduleAliases": {
+    "@root": ".",
+    "@ciphers": "./ciphers",
+    "@configurations": "./configurations",
+    "@commands": "./commands",
+    "@models": "./models",
+    "@features": "./features"
+}
 }
