@@ -18,7 +18,7 @@ const Discord = require('discord.js')
 const WOKCommands = require('wokcommands')
 
 // Import the embed handler
-const Embed = require('@configurations/embed-construct')
+// const Embed = require('@configurations/embed-construct')
 
 var errorChannel
 
@@ -52,9 +52,9 @@ client.on('ready', () => {
         .setColor(0x000000)
 })
 
-process.on('unhandledRejection', async err => {
-    console.log(err)
-    errorChannel.send(await Embed.error(err))
-})
+// process.on('unhandledRejection', async err => {
+//     console.log(err)
+//     errorChannel.send(await Embed.error(err))
+// })
 
 client.login(process.env.CLIENT_TOKEN)
