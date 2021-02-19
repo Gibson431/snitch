@@ -45,11 +45,11 @@ client.on('ready', () => {
         messagesPath: 'configurations/messages.json',
         testServers: [process.env.TBA_ID]
     })
-        .setDefaultPrefix('~')
+        .setDefaultPrefix('%')
         .setBotOwner(process.env.OWNER_ID)
         .setDefaultLanguage('english')
         .setMongoPath(process.env.MONGO_URI)
-        .setColor(0x000000)
+        .setColor(0xFF0000)
 })
 
 // process.on('unhandledRejection', async err => {
