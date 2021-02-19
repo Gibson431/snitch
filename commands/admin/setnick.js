@@ -48,7 +48,7 @@ module.exports = {
                 _id: guild.id
             }, {
                 _id: guild.id,
-                    nickname: nickname,
+                nickname: nickname
             }, {
                 upsert: true
             })
